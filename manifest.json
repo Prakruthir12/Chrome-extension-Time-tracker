@@ -1,0 +1,30 @@
+{
+    "manifest_version" : 3,
+    "name":"The-Time-Tracker",
+    "version":"1.0",
+    "description":"ALL SAFE-T AHT TRACKER",
+
+    "permissions": [
+        "storage"
+    ],
+
+    "icons":{
+      "32":"sand-clock-32.png",
+      "64":"sand-clock-64.png",
+      "128":"sand-clock-128.png"
+    },
+
+    "action":{
+        "default_icon":"sand-clock.png",
+        "default_title":"ALL SAFE-T AHT TRACKER"
+    },
+
+    "options_page":"options.html",
+    "content_scripts": [
+        {
+          "matches": ["http://*.website.net/*"],
+          "js": ["jquery-3.6.4.min.js"]
+        }
+      ]
+
+}
